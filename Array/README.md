@@ -71,4 +71,14 @@ Array type of Leet code.
 
   Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times). However, you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
 
-- 
+- 169. Majority Element
+Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
+You may assume that the array is non-empty and the majority element always exist in the array.
+
+- 217. Contains Duplicate
+  Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
+
+- 268. Missing Number
+  Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
+  For example,
+  Given nums = [0, 1, 3] return 2.

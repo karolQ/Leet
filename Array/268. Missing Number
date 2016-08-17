@@ -1,3 +1,4 @@
+// Binary search:
 public class Solution {
     public int missingNumber(int[] nums) {
         Arrays.sort(nums);
@@ -14,3 +15,5 @@ public class Solution {
         return left;
     }
 }
+// Recommend other methods to solve the problem.
+// https://discuss.leetcode.com/topic/23427/3-different-ideas-xor-sum-binary-search-java-code
