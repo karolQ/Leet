@@ -1,0 +1,50 @@
+//Method 1: using hash set, if two keys are the same, it won't be able to add in the hash set
+//src: https://discuss.leetcode.com/topic/25026/beat-90-fast-easy-understand-java-solution-with-brief-explanation/2
+
+public class Solution {
+    public boolean isHappy(int n) {
+        HashSet<Integer> set = new HashSet<>();
+        int sum, remain;
+
+        while(set.add(n)){
+            sum = 0;
+            while(n > 0){
+                remain = n % 10;
+                sum += remain * remain;
+                n /= 10;
+            }
+            if(sum == 1)
+                return true;
+            else
+                n = sum;
+        }
+        return false;
+    }
+}
+
+/*
+// Method 2: using Floyd Cycle detection algorithm(once using in the linkedlist to find the cycle)
+//src: https://discuss.leetcode.com/topic/12587/my-solution-in-c-o-1-space-and-no-magic-math-property-involved
+
+int digitSquareSum(int n) {
+    int sum = 0, tmp;
+    while (n) {
+        tmp = n % 10;
+        sum += tmp * tmp;
+        n /= 10;
+    }
+    return sum;
+}
+
+bool isHappy(int n) {
+    int slow, fast;
+    slow = fast = n;
+    do {
+        slow = digitSquareSum(slow);
+        fast = digitSquareSum(fast);
+        fast = digitSquareSum(fast);
+    } while(slow != fast);
+    if (slow == 1) return 1;
+    else return 0;
+}
+*/
