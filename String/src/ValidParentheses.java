@@ -12,7 +12,7 @@ public class ValidParentheses {
 		System.out.println(res2);
 		System.out.println(res3);
 	}
-	
+
 	public static boolean isValid(String s){
 		if (s == null || s.length() % 2 == 1)
 			return false;

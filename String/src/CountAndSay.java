@@ -6,7 +6,7 @@ public class CountAndSay {
 		System.out.println(countAndSay(n2));
 		System.out.println(countAndSay(n3));
 	}
-	
+
 	public static String countAndSay(int n){
 		if (n<=0)
 			return "";
@@ -19,7 +19,7 @@ public class CountAndSay {
 			curr = new StringBuilder();
 			count = 1;
 			say = prev.charAt(0);
-			
+
 			for (int j = 1; j < prev.length(); j++){
 				if(prev.charAt(j) != say){
 					curr.append(count).append(say);
